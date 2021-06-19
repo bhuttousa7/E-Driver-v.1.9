@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/notifications"
+            android:icon="@drawable/ic_os_notification_fallback_white_24dp"
+            android:title="Notifications" />
+        <item
+            android:id="@+id/nav_hazards"
+            android:icon="@drawable/ic_hazards"
+            android:title="Add Hazards" />
+
+        <item
+            android:id="@+id/nav_addmanualstop"
+            android:icon="@drawable/stop_icon"
+            android:title="Add Stops" />
+        <item
+            android:id="@+id/checklist"
+            android:icon="@drawable/checklist"
+            android:title="Checklist" />
+        <item
+            android:id="@+id/nav_handbook"
+            android:icon="@drawable/pdf"
+            android:title="Driver Handbook" />
+        <item
+            android:id="@+id/nav_tutorials"
+            android:icon="@drawable/tutorial"
+            android:title="Tutorials" />
+        <item
+            android:id="@+id/triplog"
+            android:icon="@drawable/checklist"
+            android:title="Trip Log" />
+        <item
+            android:id="@+id/nav_seconddriver"
+            android:icon="@drawable/user"
+            android:title="Second Driver" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Logout" />
+
+    </group>
+
+</menu>

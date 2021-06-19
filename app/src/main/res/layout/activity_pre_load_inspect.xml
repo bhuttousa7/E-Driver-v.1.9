@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ListView
+        android:id="@+id/recyclerview_insp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-7dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="7dp"
+        android:layout_weight="1"
+        android:divider="@null"></ListView>
+
+    <Button
+        android:id="@+id/btn_submitinsp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/colorAccent"
+        android:elevation="2dp"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:translationZ="2dp" />
+</LinearLayout>

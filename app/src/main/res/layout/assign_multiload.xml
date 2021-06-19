@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/border"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                android:id="@+id/SearchableSpinnerDecenting"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="0.5"
+                android:gravity="center_horizontal"
+                app:DoneSearchTintColor="@android:color/background_dark"
+                app:RevealEmptyText="Select Decantings"
+                app:RevealViewBackgroundColor="@android:color/white"
+                app:SearchViewBackgroundColor="@android:color/white"
+                app:ShowBorders="false"
+                app:SpinnerExpandHeight="200dp"
+                app:StartSearchTintColor="@android:color/darker_gray">
+
+
+            </gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner>
+
+            <TextView
+                android:id="@+id/txtmultidecanting"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="0.5"
+                android:gravity="center_horizontal"
+                android:visibility="gone"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <!--<com.telogix.telogixcaptain.Utils.MultiSelectionSpinner-->
+                    <!--android:id="@+id/spn_items"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:background="@drawable/spinner_bg"-->
+                    <!--android:spinnerMode="dropdown" />-->
+                <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                    android:id="@+id/SearchableSpinnerCommodity"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    app:DoneSearchTintColor="@android:color/background_dark"
+                    app:RevealEmptyText="Touch to select Commodities"
+                    app:RevealViewBackgroundColor="@android:color/white"
+                    app:SearchViewBackgroundColor="@android:color/white"
+                    app:ShowBorders="false"
+                    app:SpinnerExpandHeight="200dp"
+                    app:StartSearchTintColor="@android:color/darker_gray" />
+                <TextView
+                    android:id="@+id/txtmulticommodities"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="0.5"
+                    android:visibility="gone"
+                    android:gravity="center_horizontal"
+                    >
+                </TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtnumbering"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Decanting"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/edtCompartno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.32"
+                android:ems="10"
+                android:hint="Compartment No"
+                android:inputType="number"
+                android:nextFocusForward="@id/edtloadWeight"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/edtloadWeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.33"
+                android:ems="10"
+                android:hint="Load Weight"
+                android:inputType="number"
+                android:nextFocusForward="@id/etDecantingTime"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/eDecantingTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:hint="Decanting Time"
+                android:padding="15dp"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/cross"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rejected_icon" />
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_dashboard"
+            android:title="Dashboard" />
+        <item
+            android:id="@+id/nav_vehicles"
+            android:icon="@drawable/ic_vehicles"
+            android:title="Vehicles" />
+        <item
+            android:id="@+id/notifications"
+            android:icon="@drawable/ic_os_notification_fallback_white_24dp"
+            android:title="Notifications" />
+
+        <item
+            android:id="@+id/nav_routes"
+
+            android:icon="@drawable/ic_routes"
+            android:title="Routes" />
+        <item
+        android:id="@+id/nav_hazards"
+        android:icon="@drawable/ic_hazards"
+        android:title="Hazards" />
+        <item
+            android:id="@+id/uploadexcel"
+            android:icon="@drawable/excelred"
+            android:title="Upload Excel File" />
+        <item
+            android:id="@+id/livetracking"
+            android:icon="@drawable/tracking"
+            android:title="Live Tracking" />
+        <item
+            android:id="@+id/replay"
+            android:icon="@drawable/icon_route"
+            android:title="Replay" />
+
+        <item
+            android:id="@+id/nav_handbook"
+            android:icon="@drawable/pdf"
+            android:title="Driver Handbook" />
+        <item
+            android:id="@+id/nav_tutorials"
+            android:icon="@drawable/tutorial"
+            android:title="Tutorials" />
+        <item
+            android:id="@+id/pendingusers"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="Pending Users" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Logout" />
+
+    </group>
+
+</menu>

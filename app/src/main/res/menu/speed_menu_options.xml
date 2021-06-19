@@ -1,0 +1,8 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string-array android:name="spinnerItems">
+        <item android:title="Normal">Normal</item>
+        <item android:title="fast">Fast</item>
+        <item android:title="slow">Slow</item>
+        <item android:title="very_slow">Very Slow</item>
+    </string-array>
+</resources>

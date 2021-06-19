@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "982518798576",
+    "firebase_url": "https://telogix-captain-app-cdc8d-default-rtdb.firebaseio.com",
+    "project_id": "telogix-captain-app-cdc8d",
+    "storage_bucket": "telogix-captain-app-cdc8d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:982518798576:android:3f41c79ee75d2be51f8a35",
+        "android_client_info": {
+          "package_name": "com.telogix.telogixcaptain"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "982518798576-7jt5ae8o63i2qi84hjqpqqas1s3livve.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.telogix.telogixcaptain",
+            "certificate_hash": "7432200e204c8ea3646bcac7f9e44a1e1765aa97"
+          }
+        },
+        {
+          "client_id": "982518798576-bir8hm3kgdq1pt4j952mh9opgniot7gn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGk3TbKy5xcUP0IFVX7Q31nXpyRxxAu8U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "982518798576-bir8hm3kgdq1pt4j952mh9opgniot7gn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_resume"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/shelltxtColor"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+
+        app:srcCompat="@drawable/resume_icon" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="RIDE UNAVAILABLE"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+</LinearLayout>

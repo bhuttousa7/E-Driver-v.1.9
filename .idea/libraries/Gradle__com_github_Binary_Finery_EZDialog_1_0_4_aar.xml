@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.Binary-Finery:EZDialog:1.0.4@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3618635c4fc9cc026a60fd0a0d1f1035/jetified-EZDialog-1.0.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3618635c4fc9cc026a60fd0a0d1f1035/jetified-EZDialog-1.0.4/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3618635c4fc9cc026a60fd0a0d1f1035/jetified-EZDialog-1.0.4/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b035c3627acf1fdec22125de011820bc/jetified-EZDialog-1.0.4/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b035c3627acf1fdec22125de011820bc/jetified-EZDialog-1.0.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b035c3627acf1fdec22125de011820bc/jetified-EZDialog-1.0.4/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.Binary-Finery/EZDialog/1.0.4/b2f06a2b6366053a4119b0c9f3eb93ee514497eb/EZDialog-1.0.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

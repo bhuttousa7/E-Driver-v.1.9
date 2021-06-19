@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.BeppiMenozzi:TriStateToggleButton:1.1.4@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2bc8abc947c283a6cd6606ae674d2581/TriStateToggleButton-1.1.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2bc8abc947c283a6cd6606ae674d2581/TriStateToggleButton-1.1.4/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2bc8abc947c283a6cd6606ae674d2581/TriStateToggleButton-1.1.4/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5d25d692f55bb02cce2f2ec037cbac82/TriStateToggleButton-1.1.4/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5d25d692f55bb02cce2f2ec037cbac82/TriStateToggleButton-1.1.4/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5d25d692f55bb02cce2f2ec037cbac82/TriStateToggleButton-1.1.4/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.BeppiMenozzi/TriStateToggleButton/1.1.4/42ce65cdca9449346e3c4ec8f171024df58976d4/TriStateToggleButton-1.1.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

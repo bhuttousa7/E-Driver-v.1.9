@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:float="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/buttonlayout"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/mainLL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/buttonlayout"
+            android:orientation="vertical">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/AppTheme.AppBarOverlay">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/colorAccent"
+                    app:navigationIcon="?attr/homeAsUpIndicator"
+                    app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.5"
+                        app:fletPaddingBottom="20dp">
+
+                        <EditText
+                            android:id="@+id/etVname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="false"
+                            android:hint="Vehicle Name"
+                            android:inputType="none"
+                            android:paddingLeft="20dp" />
+                    </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+                    <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.5"
+                        app:fletPaddingBottom="20dp">
+
+                        <EditText
+                            android:id="@+id/etVtype"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="false"
+                            android:hint="Vehicle Type"
+                            android:inputType="none"
+                            android:outlineSpotShadowColor="@color/colorAccent"
+                            android:paddingLeft="20dp" />
+                    </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                        android:id="@+id/SearchableSpinnerPickup"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center_horizontal"
+                        android:layoutMode="opticalBounds"
+                        app:DoneSearchTintColor="@android:color/background_dark"
+                        app:RevealEmptyText="Pickup location"
+                        app:RevealViewBackgroundColor="@android:color/white"
+                        app:SearchViewBackgroundColor="@android:color/white"
+                        app:ShowBorders="false"
+                        app:SpinnerExpandHeight="300dp"
+                        app:StartSearchTintColor="@android:color/darker_gray">
+
+
+                    </gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner>
+
+                    <TextView
+                        android:id="@+id/etLoadTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:hint="Load Time"
+                        android:padding="15dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                            android:id="@+id/SearchableSpinnerDecenting"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="0.5"
+                            android:gravity="center_horizontal"
+                            app:DoneSearchTintColor="@android:color/background_dark"
+                            app:RevealEmptyText="Select Decantings"
+                            app:RevealViewBackgroundColor="@android:color/white"
+                            app:SearchViewBackgroundColor="@android:color/white"
+                            app:ShowBorders="false"
+                            app:SpinnerExpandHeight="300dp"
+                            app:StartSearchTintColor="@android:color/darker_gray">
+
+
+                        </gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                                android:id="@+id/SearchableSpinnerCommodity"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="0.5"
+                                android:gravity="center_horizontal"
+                                app:DoneSearchTintColor="@android:color/background_dark"
+                                app:RevealEmptyText="Touch to select Commodities"
+                                app:RevealViewBackgroundColor="@android:color/white"
+                                app:SearchViewBackgroundColor="@android:color/white"
+                                app:ShowBorders="false"
+                                app:SpinnerExpandHeight="300dp"
+                                app:StartSearchTintColor="@android:color/darker_gray" />
+                            <!--<com.telogix.telogixcaptain.Utils.MultiSelectionSpinner-->
+                            <!--android:id="@+id/spn_items"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="60dp"-->
+                            <!--android:layout_marginLeft="10dp"-->
+                            <!--android:layout_marginRight="10dp"-->
+                            <!--android:layout_weight="2"-->
+                            <!--android:background="@drawable/spinner_bg"-->
+                            <!--android:spinnerMode="dropdown" />-->
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/edtCompartno1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="0.32"
+                            android:ems="10"
+                            android:hint="Compartment No"
+                            android:inputType="number"
+                            android:nextFocusForward="@id/edtloadWeight1"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/edtloadWeight1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="0.33"
+                            android:hint="Load Weight"
+                            android:inputType="number"
+                            android:nextFocusForward="@id/etDecantingTime"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/etDecantingTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33"
+                            android:hint="Decanting Time"
+                            android:padding="15dp"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_multidecanting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                </LinearLayout>
+                <!--<gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner-->
+                <!--android:id="@+id/SearchableSpinnerDecenting"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_marginStart="5dp"-->
+                <!--android:layout_marginEnd="5dp"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--app:StartSearchTintColor="@android:color/darker_gray"-->
+                <!--app:DoneSearchTintColor="@android:color/background_dark"-->
+                <!--app:RevealViewBackgroundColor="@android:color/white"-->
+                <!--app:SearchViewBackgroundColor="@android:color/white"-->
+                <!--app:ShowBorders="false"-->
+                <!--app:RevealEmptyText="Touch to select Decantings"-->
+                <!--app:SpinnerExpandHeight="300dp"/>-->
+
+                <!--<gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner-->
+                <!--android:id="@+id/SearchableSpinnerCommodity"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_marginStart="5dp"-->
+                <!--android:layout_marginEnd="5dp"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--app:StartSearchTintColor="@android:color/darker_gray"-->
+                <!--app:DoneSearchTintColor="@android:color/background_dark"-->
+                <!--app:RevealViewBackgroundColor="@android:color/white"-->
+                <!--app:SearchViewBackgroundColor="@android:color/white"-->
+                <!--app:ShowBorders="false"-->
+                <!--app:RevealEmptyText="Touch to select Commodities"-->
+                <!--app:SpinnerExpandHeight="300dp"/>-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/etDecantingTime"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:padding="15dp"-->
+                <!--android:textSize="16sp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:hint= "Decanting Time" />-->
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/buttonlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnAddDecating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:text="Add Decanting"
+            android:textColor="@color/fillcolor"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnAddDecating"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:text="@string/submit"
+            android:textColor="@color/fillcolor"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+</RelativeLayout>
+

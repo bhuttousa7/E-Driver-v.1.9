@@ -1,0 +1,65 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string name="app_name">Telogix</string>
+
+    <string name="login">Login</string>
+    <string name="signup">Sign Up</string>
+    <string name="txtForgot">Forgot Password?</string>
+    <string name="register">Register</string>
+    <string name="txtMember">Already a member? Login</string>
+    <string name="resetPswd">Reset Password</string>
+    <string name="txtBack">Back</string>
+    <string name="txtInstruction">We just need your registered Email Id to sent you password reset instructions. </string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+<string name="serviceChampion">کیا سروس چیمپیئن وہی تھا؟</string>
+    <string name="vehicles">All Vehicles</string>
+    <string name="hazard">All Hazards</string>
+    <string name="notifications">Notifications</string>
+    <string name="routes">All Routes</string>
+    <string name="vnumber">ADV-3920</string>
+    <string name="action">Assign Load</string>
+    <string name="inspect">Inspect</string>
+    <!--<string name="mapApi">AIzaSyBJRPLoOeqq-ofkiUV4_AIBouceD_ej9UI</string>-->
+        <string name="GCP_API_Key">AIzaSyCHB7IpTjaZrSooDBI1LQC6L8sRUBUQCnU</string>
+<!--    <string name="mapApi">AIzaSyAITXAYhXEAmU_0PhaadOi2-QVk7E26Wlk</string>-->
+    <string name="mapApi">AIzaSyDiYLlYtvo76RREjchYHgq1yanzYk_LzYo</string>
+    <string name="mapDirectionApi">AIzaSyDiYLlYtvo76RREjchYHgq1yanzYk_LzYo</string>
+    <string name="submit">Submit</string>
+    <string name="edit">Edit</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="playaudio_txt">Play Audio</string>
+    <string name="routedetailtxt">Route Details</string>
+    <string name="vehiclenumbertxt">Vehicle No:</string>
+    <string name="signoffTitle">Route Briefing Declaration: </string>
+    <string name="routename">Route Name:</string>
+    <string name="vehicleno">Vehicle No:</string>
+    <string name="copyroute">Copy</string>
+    <string name="assignroute">Assign Route</string>
+    <string name="editroute">Edit</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="inc_speed">+</string>
+    <string name="dec_speed">-</string>
+
+    <string-array name="spinnerItems">
+        <item android:title="Normal">Normal</item>
+        <item android:title="fast">Fast</item>
+        <item android:title="very_fast">Very Fast</item>
+        <item android:title="slow">Slow</item>
+        <item android:title="very_slow">Very Slow</item>
+    </string-array>
+
+    <string name="undertakingtxt">Please complete or delete the table(s) below as necessary.]
+[The EMEA procedure (i.e. EMEA/H/C/product No./procedure No.) from which the PAC originates should be stated for each commitment, e.g. EMEA/H/C/132/II/0032.]
+[Please give a clear and concise description of each PAC, with sufficient level of detail. This description will be entered into EMEA’s SIAMED database. Please note that the text of the description for Specific Obligations will be copied in Annex II.C to the Community Marketing Authorisation. The exact same description should be used in the template cover letter when submitting the PAC data.]
+[An updated Letter of Undertaking including only quality FUMs, is required at the time of the annual submission of Quality FUMs  A consolidated Letter of Undertaking including all PACs (quality, non-clinical, clinical and pharmacovigilance) is required at the time of renewal or annual reassessment, if applicable.]
+</string>
+    <string name="title_activity_ride_unavailable">RideUnavailable</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pendingusers">Unapproved Users</string>
+    <string name="replay">Replay</string>
+</resources>
+
+
+

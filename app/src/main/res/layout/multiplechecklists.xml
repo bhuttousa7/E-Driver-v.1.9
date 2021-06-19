@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll_one_level_multiplechecklists"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/tv_decanting_site_name"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Decanting Site Name: ">
+            </TextView>
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/decantingSite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="">
+            </TextView>
+
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/decantingSiteName"
+            android:text="Decanting Site Name: "
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+        </TextView>
+<!--<LinearLayout-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:weightSum="3"-->
+<!--    android:orientation="horizontal">-->
+<!--    <TextView-->
+<!--        android:layout_weight="2"-->
+<!--        android:text="InspectionTitle: "-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textStyle="bold"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--    </TextView>-->
+
+<!--    <TextView-->
+<!--        android:layout_weight="1"-->
+<!--        android:text="Checked: "-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textStyle="bold"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="wrap_content">-->
+<!--    </TextView>-->
+<!--</LinearLayout>-->
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="3"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_weight="1"
+        android:id="@+id/isChecked"
+        android:text="Checked: "
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <TextView
+        android:layout_weight="2"
+        android:id="@+id/inspectionTitleUr"
+        android:text="InspectionTitelUr: "
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </TextView>
+
+
+</LinearLayout>
+
+
+        <TextView
+            android:id="@+id/condition"
+            android:text="Condition: "
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+        </TextView>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

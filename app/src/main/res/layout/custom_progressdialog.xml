@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/progressdialog"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+    style="@style/AVLoadingIndicatorView"
+    android:visibility="visible"
+    app:indicatorName="BallTrianglePathIndicator"
+    app:indicatorColor="@color/white"
+    />
+
+    <TextView
+        android:id="@+id/progressBar_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/progressBar"
+        android:text="Loading..."
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/progressBar" />
+
+</RelativeLayout>
+<!--
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<com.wang.avi.AVLoadingIndicatorView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/progressbar"
+    android:layout_centerInParent="true"
+    app:indicatorName="BallPulseIndicator" />
+
+</RelativeLayout>-->

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_weight="1"
+    tools:context=".driver.fragments.ElectronicSignOff">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/signoffTitle"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:layout_weight=".1"/>
+
+    <TextView
+        android:id="@+id/txtviewdeclaration"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:padding="3dp"
+        android:scrollbars="vertical"
+        android:layout_weight=".6"
+        android:text="@string/undertakingtxt" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_weight=".1"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:orientation="vertical">
+
+
+            <!--<TextView-->
+            <!--android:id="@+id/txtRouteName"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:text="@string/routename"-->
+            <!--android:textColor="@color/primary_text" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/txt_vehicleno"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:text="@string/vehicleno"-->
+            <!--android:textColor="@color/primary_text" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/txtDatetime"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:text="DateTime"-->
+            <!--android:textColor="@color/primary_text" />-->
+
+            <TextView
+                android:id="@+id/txtDriverName"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Driver Name :"
+                android:textColor="@color/primary_text"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtRoutename"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/txtvehicleNo"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/txtdatetime"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:textColor="@color/colorAccent" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imgcross"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="end"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="-23dp"
+                android:background="@drawable/error"
+                android:translationZ="99dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.github.gcacace.signaturepad.views.SignaturePad
+                    android:id="@+id/signature_pad"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/border"
+                    android:elevation="2dp"
+                    android:translationZ="2dp"
+                    app:penColor="@android:color/black" />
+
+            </RelativeLayout>
+
+
+            <TextView
+
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:gravity="clip_horizontal|center"
+                android:text="signature"
+                android:textColor="@color/colorAccent" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_start_ride"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/colorAccent"
+        android:text="Submit"
+        android:layout_weight=".2"
+        android:textColor="@color/white" />
+
+</LinearLayout>

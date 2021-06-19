@@ -1,0 +1,187 @@
+buildscript {
+    repositories {
+        maven { url 'https://plugins.gradle.org/m2/' }
+    }
+    dependencies {
+        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:[0.12.4, 0.99.99]'
+    }
+}
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    signingConfigs {
+        SignedTelogix {
+            storeFile file('D:\\Moin\\telogix-e-driver\\Versions\\v1.18\\keystore10.10.19.jks')
+            storePassword 'telogixismine'
+            keyAlias = 'Telogix'
+            keyPassword 'telogixismine'
+        }
+    }
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "com.telogix.telogixcaptain"
+        minSdkVersion 23
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.18"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        manifestPlaceholders = [
+                onesignal_app_id               : '8bfb859e-b2b2-4718-ab9e-35993aa30bb7',
+                // Project number pulled from dashboard, local value is ignored.
+                onesignal_google_project_number: 'REMOTE'
+        ]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+//          shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            debuggable = false
+            signingConfig signingConfigs.SignedTelogix
+            multiDexEnabled = true
+
+            android.applicationVariants.all { variant ->
+                variant.outputs.all {
+                    outputFileName = "E-driver"
+                    outputFileName += "-v" + android.defaultConfig.versionName
+                    if (variant.buildType.name == "release") {
+                        outputFileName += "-release.apk"
+                    } else {
+                        outputFileName += "-debug.apk"
+                    }
+                }
+            }
+
+
+        }
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+    allprojects {
+        repositories {
+            maven { url 'https://jitpack.io' }
+        }
+    }
+
+
+    repositories {
+        maven { url 'https://maven.google.com' }
+    }
+}
+
+
+/*
+*   keystore
+*   pass: 123456
+*   key alias: associatedventure
+* */
+
+
+dependencies {
+
+    def fragment_version = "1.2.5"
+
+    // Core library
+    androidTestImplementation 'androidx.test:core:1.2.0'
+
+    // AndroidJUnitRunner and JUnit Rules
+    androidTestImplementation 'androidx.test:rules:1.2.0'
+
+    // Assertions
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+
+    // Java language implementation\
+
+
+    implementation "androidx.fragment:fragment:$fragment_version"
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    /* MY LIBS */
+    implementation 'com.wrapp.floatlabelededittext:library:0.0.6'
+    //retro
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+    //loader lib
+    implementation 'com.wang.avi:library:2.1.3'
+    // card and recycler
+    //noinspection GradleCompatible
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:recyclerview-selection:28.0.0'
+    //searchable spinner
+    implementation 'gr.escsoft.michaelprimez.searchablespinner:SearchableSpinner:1.0.9'
+    implementation 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
+    //Circle image
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    //dialog
+    //  implementation 'com.github.Binary-Finery:EZDialog:1.0.4'
+//    implementation "com.google.android.gms:play-services-maps:17.0.0"
+
+    def playServicesVersion = '16.0.0'
+    implementation("com.google.android.gms:play-services-maps:$playServicesVersion") {
+        exclude group: "com.android.support"
+    }
+    implementation("com.google.android.gms:play-services-location:$playServicesVersion") {
+        exclude group: "com.android.support"
+    }
+
+//    implementation ("com.google.android.libraries.places:places-compat:2.0.0") {
+//        exclude group: "com.android.support"
+//    }
+    implementation 'com.google.android.libraries.places:places:2.0.0'
+    implementation "com.google.maps:google-maps-services:0.2.9"
+    implementation 'com.google.code.gson:gson:2.8.5'
+    //    implementation 'com.google.android.gms:play-services-location:17.0.0'
+//    implementation 'com.google.android.gms:play-services-places:17.0.0'
+    implementation 'com.google.maps.android:android-maps-utils:0.3+'
+    //volley
+    implementation 'com.jmedeisis:draglinearlayout:1.1.0'
+    implementation 'com.android.volley:volley:1.1.1'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'io.paperdb:paperdb:2.6'
+    implementation 'com.google.firebase:firebase-auth:19.0.0'
+    implementation 'com.google.firebase:firebase-core:17.2.0'
+    implementation 'com.google.firebase:firebase-firestore:21.1.1'
+    implementation 'com.google.firebase:firebase-database:19.1.0'
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    implementation 'com.github.BeppiMenozzi:TriStateToggleButton:1.1.4'
+    implementation 'com.github.gcacace:signature-pad:1.2.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+    implementation 'com.daimajia.swipelayout:library:1.2.0@aar'
+    implementation 'com.github.ATHBK:UltimateTabLayout:1.3.0'
+    //
+    // implementation 'com.github.danylovolokh:list-visibility-utils:0.2.0'
+    // implementation 'com.github.halilozercan:BetterVideoPlayer:kotlin-SNAPSHOT'
+
+    //place picker library
+    // implementation 'com.schibstedspain.android:leku:6.3.0'
+    //
+    implementation 'com.toptoche.searchablespinner:searchablespinnerlibrary:1.3.1'
+
+    implementation 'com.shuhart.stepview:stepview:1.5.0'
+    implementation 'com.budiyev.android:code-scanner:2.1.0'
+    apply plugin: 'com.google.gms.google-services'
+    implementation 'androidx.gridlayout:gridlayout:1.0.0'
+    implementation 'com.google.firebase:firebase-messaging:20.1.0'
+//    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+    implementation 'com.onesignal:OneSignal:[3.11.2, 3.99.99]'
+    implementation 'com.github.Binary-Finery:EZDialog:1.0.4'
+    implementation 'androidx.work:work-runtime:2.3.0'
+
+    //implementation 'com.stepstone.apprating:app-rating:2.3.1'
+
+}

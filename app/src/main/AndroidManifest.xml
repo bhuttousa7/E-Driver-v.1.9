@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.telogix.telogixcaptain"
+    android:versionCode="1"
+    android:versionName="1.18">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="packagename.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature
+        android:name="android.hardware.Sensor.accelerometer"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.Sensor"
+        android:required="true" />
+
+    <dist:module dist:instant="true" />
+
+    <application
+        android:name=".Utils.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_telogix_round"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/logo_telogix_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+
+
+        <activity android:name=".activities.Notifications.NotificationsActivity" />
+        <activity android:name=".driver.activities.SecondDriverLoginActivity" />
+        <activity android:name=".activities.EditLoadActivity" />
+        <activity
+            android:name=".driver.activities.RideUnavailable"
+            android:label="@string/title_activity_ride_unavailable"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".driver.activities.ActivityQRcode" />
+        <activity
+            android:name=".driver.activities.ResumeProcess"
+            android:exported="true" />
+        <activity android:name=".driver.activities.ResumeRideActivity" />
+        <activity android:name=".driver.fragments.DecantingListActivity" />
+        <activity android:name=".activities.SignupActivity" />
+        <activity
+            android:name=".activities.zoomedImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.InspectionRemarksActivity"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity
+            android:name=".activities.PreLoadInspectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.MapDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AddStopActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AutocompleteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.viewRouteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.MapActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/mapApi" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_path" />
+        </provider>
+
+        <activity
+            android:name=".activities.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.MainActivity"
+            android:exported="true"
+            android:label="@string/vehicles"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AssignLoadActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.RegistrationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.RecoverPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".driver.activities.DriverMainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".driver.utils.MyService_copy" />
+        <service android:name=".driver.utils.FusedLocationService" />
+        <service android:name=".driver.utils.SpeedCheckerBroadcast" />
+        <service android:name=".driver.utils.FusedLocationServiceAllTime" />
+        <service android:name=".Utils.InternetService" />
+        <service
+            android:name=".driver.utils.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

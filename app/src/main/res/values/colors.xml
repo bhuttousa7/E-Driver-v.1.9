@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#777579</color>
+    <color name="colorPrimaryDark">#424242</color>
+    <color name="primary_light">#757575</color>
+    <!--<color name="colorAccent">#4C83E0</color>-->
+
+    <color name="colorAccent">#ED1C24</color>
+    <color name="shellyellow">#fffff7 </color>
+    <color name="blue">#709CEB</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="primary_text">#212121</color>
+    <color name="fillcolor">#ffffff</color>
+    <color name="white">#FFF</color>
+    <color name="black">#000</color>
+    <color name="red">#C70F0F</color>
+    <color name="dark_green">#218713</color>
+    <color name="toggleGreen">#43A047</color>
+    <color name="gray">#B0B0B0</color>
+    <color name="shelltxtColor">#ED1C24</color>
+    <color name="starColor">#FDCC0D</color>
+</resources>
